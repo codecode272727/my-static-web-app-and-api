@@ -1,5 +1,5 @@
 <template>
-  <div column is-2>
+  <div>
     <nav class="menu">
       <p class="menu-label">Menu</p>
       <ul class="menu-list">
@@ -7,11 +7,11 @@
         <router-link to="/about">About</router-link>
       </ul>
     </nav>
-   <div>Hi, new testing</div>
+    <div>Hi, new testing</div>
   </div>
 </template>
 <script>
-/*export default {
+/* export default {
   name: 'NavBar',
   data() {
     return {
@@ -39,6 +39,5 @@
 async created() {
   this.userInfo = await this.getUserInfo();
 },
-};*/
-
+}; */
 </script>
