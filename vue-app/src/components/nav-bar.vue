@@ -7,34 +7,11 @@
         <router-link to="/about">About</router-link>
       </ul>
     </nav>
-    <nav class="menu auth">
-      <p class="menu-label">Auth</p>
-      <div class="menu-list auth">
-        <template v-if="!userInfo">
-          <template v-for="provider in providers">
-            <a
-              :key="provider"
-              :href="`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`"
-              >{{ provider }}</a
-            >
-          </template>
-        </template>
-        <a
-          v-if="userInfo"
-          :href="`/.auth/logout?post_logout_redirect_uri=${redirect}`"
-          >Logout</a
-        >
-      </div>
-    </nav>
-    <div class="user" v-if="userInfo">
-      <p>Welcome</p>
-      <p>{{ userInfo.userDetails }}</p>
-      <p>{{ userInfo.identityProvider }}</p>
-    </div>
+   <div>Hi, new testing</div>
   </div>
 </template>
 <script>
-export default {
+/*export default {
   name: 'NavBar',
   data() {
     return {
@@ -62,6 +39,6 @@ export default {
 async created() {
   this.userInfo = await this.getUserInfo();
 },
-};
+};*/
 
 </script>
